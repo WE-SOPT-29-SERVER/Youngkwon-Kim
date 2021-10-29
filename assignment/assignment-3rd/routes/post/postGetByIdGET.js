@@ -1,7 +1,4 @@
-const util = require("../../lib/util");
-const statusCode = require("../../constant/statusCode");
-const responseMessage = require("../../constant/responseMessage");
-const posts = require("../../dbmockup/posts");
+const { util, statusCode, responseMessage, posts } = require("./module_import");
 
 module.exports = async (req, res) => {
   const id = parseInt(req.params.id);
